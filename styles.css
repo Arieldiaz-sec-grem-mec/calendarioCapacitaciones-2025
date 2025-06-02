@@ -226,7 +226,7 @@ h1 {
 
 .modal-title {
     font-size: 1.3rem;
-    color: var(--primary-color);
+    color: rgb(216, 212, 212);
 }
 
 .close-modal {
@@ -245,7 +245,8 @@ h1 {
 
 .detail-label {
     font-weight: bold;
-    color: var(--primary-color);
+        color: rgb(216, 212, 212);
+
     display: inline-block;
     width: 100px;
 }
