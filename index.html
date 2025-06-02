@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="description" content="Calendario de Capacitaciones UTNBA-SICHOCA 2025">
+    <title>Calendario de Capacitaciones UTNBA-SICHOCA 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calendario de Capacitaciones</h1>
+            <p class="subtitle">UTNBA-SICHOCA 2025</p>
+        </header>
+
+        <div class="controls">
+            <div class="month-selector">
+                <button class="month-nav" id="prev-month" aria-label="Mes anterior">◀ Anterior</button>
+                <div class="current-month" id="current-month">Junio 2025</div>
+                <button class="month-nav" id="next-month" aria-label="Mes siguiente">Siguiente ▶</button>
+            </div>
+            
+            <select class="course-filter" id="course-filter" aria-label="Filtrar cursos">
+                <option value="all">Todos los cursos</option>
+                <option value="Hidraulica">Hidráulica II</option>
+                <option value="Mecanica">Mecánica del Automotor I</option>
+                <option value="Electricidad">Electricidad del Automotor I</option>
+                <option value="Neumatica">Neumática II</option>
+                <option value="Inyeccion">Inyección Electrónica I</option>
+            </select>
+        </div>
+
+        <div class="calendar-grid" id="calendar" role="grid">
+            <!-- Los días del calendario se generarán con JavaScript -->
+        </div>
+
+        <div class="legend" role="complementary" aria-label="Leyenda de cursos">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #e74c3c;"></div>
+                <span>Hidráulica II</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #2ecc71;"></div>
+                <span>Mecánica del Automotor I</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #f39c12;"></div>
+                <span>Electricidad del Automotor I</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #9b59b6;"></div>
+                <span>Neumática II</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #1abc9c;"></div>
+                <span>Inyección Electrónica I</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="event-modal" role="dialog" aria-labelledby="modal-event-title">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-event-title">Detalles del Curso</h2>
+                <button class="close-modal" id="close-modal" aria-label="Cerrar">&times;</button>
+            </div>
+            <div class="event-details" id="event-details">
+                <!-- Los detalles del evento se llenarán con JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
