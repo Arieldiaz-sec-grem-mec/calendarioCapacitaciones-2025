@@ -26,7 +26,7 @@ const cursos = {
         fin: "2025-08-05",
         sedes: {
             "UTNBA": "CAMPUS UTNBA Morón 2300, Villa Soldati, CABA",
-            "ASHIRA": "EMPRESA ASHIRA, Av. Directorio 1733, CABA"
+            "ASHIRA": "EMPRESA ASHIRA, , Lafayette 1751, CABA"
         },
         clases: [
             "2025-06-10:UTNBA", "2025-06-12:UTNBA", "2025-06-17:UTNBA", "2025-06-19:UTNBA",
