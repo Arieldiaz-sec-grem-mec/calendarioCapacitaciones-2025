@@ -82,6 +82,17 @@ h1 {
     transform: translateY(1px);
 }
 
+.month-nav:disabled {
+    cursor: not-allowed;
+    background-color: #95a5a6;
+    transform: none;
+}
+
+.month-nav:disabled:hover {
+    background-color: #95a5a6;
+    transform: none;
+}
+
 .current-month {
     font-size: 1.2rem;
     font-weight: bold;
